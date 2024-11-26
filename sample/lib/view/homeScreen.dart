@@ -43,7 +43,7 @@ class _HomescreenState extends State<Homescreen> {
           SizedBox(width: 15,),
         ],
       ),
-        //  backgroundColor: Colors.white,
+
       body:
       Column(
          crossAxisAlignment: CrossAxisAlignment.start,
@@ -61,7 +61,7 @@ class _HomescreenState extends State<Homescreen> {
 
           SizedBox(height: 30,),
 
-          
+// gridview builder
           Expanded(
             child: GridView.builder(
                
@@ -75,7 +75,7 @@ class _HomescreenState extends State<Homescreen> {
             
                      return  GestureDetector(
                             onTap: () {
-                              // print("hiiiii${index}");
+                             
                               Navigator.pushReplacement(context, MaterialPageRoute(builder: 
                               (context) => Quizhomescreen(category:selectedCategory),));
                             },
@@ -99,7 +99,7 @@ class _HomescreenState extends State<Homescreen> {
                                                  ],
                                                ),
                                              ),
-                             // image
+       // image
                                              Positioned(
                                                top: 0,
                                                right: 0,
@@ -108,7 +108,7 @@ class _HomescreenState extends State<Homescreen> {
                                                width: 130,
                                                height: 130,),
                                              ),
-                               // Text
+        // Text
                                              Positioned(
                                                bottom: 20,
                                                right: 90,

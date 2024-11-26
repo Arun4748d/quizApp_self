@@ -6,6 +6,7 @@ import 'package:lottie/lottie.dart';
 import 'package:sample/quizDatabase.dart';
 import 'package:sample/utils/animation_constant.dart';
 import 'package:sample/utils/colorconstant.dart';
+import 'package:sample/view/homeScreen.dart';
 import 'package:sample/view/resultScreen/result_screen.dart';
 
 class Quizhomescreen extends StatefulWidget {
@@ -46,6 +47,10 @@ class _QuizhomescreenState extends State<Quizhomescreen> {
 
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(onPressed: () {
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Homescreen(),));
+        }, icon: Icon(Icons.arrow_back),
+        color: Colors.white,),
         
         actions: [
              
@@ -188,7 +193,7 @@ class _QuizhomescreenState extends State<Quizhomescreen> {
                                 
                               ),
                               maxLines: 10,
-                              // overflow:TextOverflow.ellipsis,
+                             // overflow:TextOverflow.ellipsis,
                               ),
                             ),
                                                ),
@@ -316,6 +321,7 @@ void startTimer() {
   });
 }
 }
+
 
 
 
