@@ -40,6 +40,7 @@ class _SplashscreenState extends State<Splashscreen> {
             ),
           ),
         ),
+// text
         Text("Learning Is Fun When It's a Game!",style: TextStyle(
           color: Colorconstant.mainColor,
           fontSize: 22,
