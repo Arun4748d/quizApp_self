@@ -9,6 +9,7 @@ class ImageConstant {
   static const Bike="assets/images/motorcycle-racer.png";
   static const Games="assets/images/pubg-character.png";
   static const Toys="assets/images/lego-movie.png";
+  static const Logo="assets/images/Quiz-Logo-PNG-HD.png";
 
 
 }
